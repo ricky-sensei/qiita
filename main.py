@@ -17,11 +17,12 @@ def putQiitaArticle(title, markdown, path="article", id=""):
         "id": id,
         "tags": [
             {
-            "name": "qiita"
+            "name": "アクセルキャンプ"
             },
             {
-            "name": "test"
-            }
+            "name": "roblox"
+            },
+
         ],
         "private": False,
         "coediting": False,
@@ -43,6 +44,6 @@ if __name__ == "__main__":
     with open("./article/変数.md", encoding="utf-8") as f:
         lines = f.readlines()
     markdown = "".join(lines)
-    markdown = replace_images_by_filename(markdown)
+    # markdown = replace_images_by_filename(markdown)
     res = putQiitaArticle("luau①", markdown,"article", "").json()
     print(res)
