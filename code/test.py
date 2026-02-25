@@ -1,27 +1,6 @@
-gokuu = {
-    "かめはめ波": True,
-    "ファイナルフラッシュ": False,
-    "サイヤ人": True,
-}
+gokuu = 5 # 110
+vegita = 3 # 010
 
-vegita = {
-    "かめはめ波": False,
-    "ファイナルフラッシュ": True,
-    "サイヤ人": True,
-}
+gojita = gokuu | vegita
 
-skills = ["かめはめ波", "ファイナルフラッシュ", "サイヤ人"]
-
-gojita = {}
-
-for skill in skills:
-    if gokuu[skill] and vegita[skill]:
-        gojita[skill] = True
-    elif gokuu[skill] or vegita[skill]:
-        gojita[skill] = True
-    else:
-        gojita[skill] = False
-
-print(gojita)
-
-
+print(gojita) # 7 : 111
