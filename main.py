@@ -20,7 +20,7 @@ def putQiitaArticle(title, markdown, path="article", id=""):
             "name": "アクセルキャンプ"
             },
             {
-            "name": "python"
+            "name": "情報Ⅰ"
             },
 
         ],
